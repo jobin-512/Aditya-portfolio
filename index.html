@@ -1,1138 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adita Kumar Rai- Personal Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aditya Kumar Rai - Portfolio</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+<style>
+html{
+scroll-behavior:smooth;
+}
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+.card{
+padding:24px;
+border-radius:16px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+background:rgba(255,255,255,0.08);
+transform:translateY(-4px);
+}
+</style>
+
 </head>
 
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Aditya Kumar Rai" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Adiya Kumar Rai">Adiya Kumar Rai</h1>
-
-          <p class="title">Media Personal</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:addy.rai2002@gmail.com" class="contact-link">addy.rai2002@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+918745962776" class="contact-link">+91 8745962776 </a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2002-04-04">April 04, 2002</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Delhi, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/addy_kun_rai04/  " target="_blank" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://in.linkedin.com/in/aditya-kumar-rai-0a4307225" target="_blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am an aspiring Brand Stratergist, Media Planner, PR professional , Copywriter, Creative Stratergist, Brand Executive, Brand Consultant, Social Media manager and Corporate Communication.
-          </p>
-
-          <p>
-            With a growing portfolio in design and advertising concepts I continously work on creativity and stratergic thinking.
-            I am particularly interested in roles that combine brand positioning, content stratergy and campaign development.
-            My goal is to build brands that are not only visibile but meaningful.
-            I am someone who belives that brands are not just logos but emotions.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="Brand Stratergy" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Brand Stratergy</h4>
-
-                <p class="service-item-text">
-                  Helping brand in growing stratergically.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Marketing Stratergy" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Marketing Stratergy</h4>
-
-                <p class="service-item-text">
-                  Understanding the market and help in building new stratergies for growth.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Advertisement</h4>
-
-                <p class="service-item-text">
-                  Creating creative ads for over the top rembering of brand and product/service.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Public Relations </h4>
-
-                <p class="service-item-text">
-                  Helping in changing perceptions and creating a good image of brands. 
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Arjun Mehta" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Arjun Mehta</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "Aditya has an incredible ability to understand a business at its core. Her brand strategy gave us a clear direction, consistent messaging, and a powerful identity. Investors started taking us more seriously, and our online presence improved significantly. Highly recommend her to anyone serious about scaling."
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Priya Nair" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Priya Nair</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "Working with Aditya completely transformed my brand. Before her strategy, we were just another small business in the market. She helped us define our voice, positioning, and customer journey. Within 3 months, our engagement doubled and sales increased by 40%. She doesn’t just build brands — she builds clarity and confidence."  
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Sneha Thomas" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sneha Thomas</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "I was struggling to differentiate my skincare brand in a crowded market. Aditya helped me uncover my unique positioning and build a brand story that truly connects with my audience. The results were visible within weeks. She is strategic, creative, and deeply insightful."
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Rahul Verma" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Rahul Verma</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    "Our brand felt outdated and inconsistent. Aditya reworked our brand foundation, messaging, and overall direction. Now we have a clear identity that resonates with premium clients. We’ve seen better quality leads and stronger brand recall."
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
-          - clients
-        -->
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.svg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo" height="70">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo" height="70">
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>  
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Indian Institue of Mass Commuication New Delhi</h4>
-
-              <span>2025 — 2026</span>
-
-              <p class="timeline-text">
-                PG diploma in advertisement and public relationns.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Zakir Husain delhi College</h4>
-
-              <span>2021 — 2024</span>
-
-              <p class="timeline-text">
-                BA Political Sience Honors
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Salwan Public School Delhi</h4>
-
-              <span>2005 — 2021</span>
-
-              <p class="timeline-text">
-                Senior Secondary Education 
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Copy Writter</h4>
-
-              <span>2023 — 2025</span>
-
-              <p class="timeline-text">
-                Freelancer - Truelancer
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Journalist Intern</h4>
-
-              <span>Februaury ,2023 — August ,2023</span>
-
-              <p class="timeline-text">
-                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                quas molestias
-                exceptur.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Writting</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Stratergist</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Media Planner</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Creative Executive</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <!-- <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li> 
-
-          </ul> -->
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <!-- <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul> -->
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="./assets/portfolio/1.pdf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Lights Camera Action</h3>
-
-                <!-- <p class="project-category">Web development</p> -->
-
-              </a>
-            </li>
-
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="./assets/portfolio/3.pdf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.png" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Amul X KFC</h3>
-
-                <!-- <p class="project-category">Web design</p> -->
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="./assets/portfolio/4.pdf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Creative Brief</h3>
-
-                <!-- <p class="project-category">Applications</p> -->
-
-              </a>
-            </li>
-
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="./assets/portfolio/6.pdf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Prozein</h3>
-
-                <!-- <p class="project-category">Web design</p> -->
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="./assets/portfolio/7.pdf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Chat GPT Junior</h3>
-
-                <!-- <p class="project-category">Web development</p> -->
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="./assets/portfolio/9.pdf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Amazon grad Indian Carnival</h3>
-
-                <!-- <p class="project-category">Web development</p> -->
-
-              </a>
-            </li>
-
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="./assets/portfolio/2.pdf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Boat</h3>
-
-                <!-- <p class="project-category">Web development</p>   -->
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="./assets/portfolio/5.pdf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Gloical Galleria</h3>
-
-                <!-- <p class="project-category">Web design</p> -->
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="./assets/portfolio/8.pdf" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.png" alt="task manager" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Glocal Galleria Article</h3>
-
-                <!-- <p class="project-category">Applications</p> -->
-
-              </a>
-            </li>
-
-            
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
-
-                  <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
-
-                  <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
-
-                  <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
-
-                  <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
-
-                  <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
-
-                  <p class="blog-text">
-                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-  <div>
-    <a href="https://guthub.com/jobin-512" target="_blank" class="last">developed and Designed by Jobin-512</a>
-  </div>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<body class="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-blue-950 text-white">
+
+<!-- Background -->
+<div class="fixed inset-0 overflow-hidden -z-10">
+<div class="absolute -top-32 -left-32 w-96 h-96 bg-purple-500/30 blur-3xl rounded-full"></div>
+<div class="absolute top-1/2 -right-32 w-96 h-96 bg-blue-500/30 blur-3xl rounded-full"></div>
+<div class="absolute bottom-0 left-1/3 w-96 h-96 bg-indigo-500/30 blur-3xl rounded-full"></div>
+</div>
+
+<!-- NAVBAR -->
+<header class="px-6 md:px-16 py-6 flex justify-between items-center">
+<h1 class="font-semibold">Aditya Rai</h1>
+
+<nav class="flex gap-6 text-white/70">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#creatives">Creatives</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="px-6 md:px-16 py-16">
+<div class="max-w-5xl">
+
+<span class="inline-block mb-4 px-3 py-1 text-sm bg-white/10 backdrop-blur border border-white/20 rounded-full">
+Brand Strategy • Advertising • PR • Media Planning
+</span>
+
+<h1 class="text-4xl md:text-6xl font-bold leading-tight">
+Aditya Kumar Rai
+</h1>
+
+<p class="mt-4 text-lg text-white/80 max-w-2xl">
+Aspiring Brand Strategist focused on building meaningful brands through
+creativity, consumer insights and integrated communication strategies.
+</p>
+
+<div class="flex gap-4 mt-8">
+<a href="#projects" class="px-6 py-3 rounded-xl bg-white text-black font-medium">
+View Work
+</a>
+
+<a href="https://drive.google.com/file/d/1TLA7coI84bFtPQLdJ5qorBt-wUcPQGHJ/view?usp=drivesdk" target="_blank" class="px-6 py-3 rounded-xl border border-white/20">
+Download Resume
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="px-6 md:px-16 py-16">
+<div class="max-w-4xl">
+
+<h2 class="text-3xl font-semibold mb-6 flex items-center gap-2">
+<i data-lucide="user"></i>
+About Me
+</h2>
+
+<p class="text-white/80 leading-relaxed">
+I am an aspiring Brand Strategist with a strong interest in advertising, brand
+communication and integrated campaign planning. My work focuses on combining
+creative thinking with strategic insights to build meaningful and impactful
+brand narratives.
+<br><br>
+I enjoy working across the entire brand-building process — from understanding
+consumer behavior and defining brand positioning to crafting campaigns and
+planning communication strategies. My approach blends storytelling, audience
+insights and media thinking to create ideas that are both creative and effective.
+<br><br>
+I am particularly interested in roles related to brand strategy, advertising,
+public relations and media planning, where I can contribute to developing
+campaigns, solving communication challenges and building strong brand
+experiences.
+</p>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="px-6 md:px-16 py-16">
+<h2 class="text-3xl font-semibold mb-10">What I'm Doing</h2>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div onclick="toggle(this)" class="cursor-pointer card">
+<i data-lucide="target"></i>
+<h3 class="text-xl font-semibold mt-3">Brand Strategy</h3>
+<p class="hidden mt-3 text-white/70">
+Developing brand positioning, defining target audience and crafting
+strategic communication frameworks. Focused on building meaningful
+brand identities through insights, differentiation and long-term
+brand thinking.
+</p>
+</div>
+
+<div onclick="toggle(this)" class="cursor-pointer card">
+<i data-lucide="megaphone"></i>
+<h3 class="text-xl font-semibold mt-3">Advertising</h3>
+<p class="hidden mt-3 text-white/70">
+Creating campaign ideas, ad concepts and creative messaging across
+digital platforms. Working on copy, storytelling and visual
+communication to improve brand recall and engagement.
+</p>
+</div>
+
+<div onclick="toggle(this)" class="cursor-pointer card">
+<i data-lucide="briefcase"></i>
+<h3 class="text-xl font-semibold mt-3">Public Relations</h3>
+<p class="hidden mt-3 text-white/70">
+Planning PR campaigns, influencer collaborations and media-led
+communication strategies. Focused on building brand credibility,
+visibility and positive public perception.
+</p>
+</div>
+
+<div onclick="toggle(this)" class="cursor-pointer card">
+<i data-lucide="bar-chart-3"></i>
+<h3 class="text-xl font-semibold mt-3">Media Planning</h3>
+<p class="hidden mt-3 text-white/70">
+Planning media mix, channel strategy and campaign distribution.
+Selecting platforms, budgeting and optimizing communication
+touchpoints for maximum reach and effectiveness.
+</p>
+</div>
+
+<div onclick="toggle(this)" class="cursor-pointer card">
+<i data-lucide="alert-triangle"></i>
+<h3 class="text-xl font-semibold mt-3">Crisis Communication</h3>
+<p class="hidden mt-3 text-white/70">
+Developing crisis response strategies and brand messaging during
+sensitive situations. Focused on protecting brand reputation,
+maintaining transparency and rebuilding consumer trust.
+</p>
+</div>
+
+<div onclick="toggle(this)" class="cursor-pointer card">
+<i data-lucide="lightbulb"></i>
+<h3 class="text-xl font-semibold mt-3">Campaign Planning</h3>
+<p class="hidden mt-3 text-white/70">
+Planning end-to-end campaigns from objective setting to execution.
+Working on big ideas, timelines, deliverables and integrated
+communication strategy across channels.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="px-6 md:px-16 py-16">
+<h2 class="text-3xl font-semibold mb-10">Projects</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<a class="card" target="_blank" href="https://www.canva.com/design/DAHEp45A5bQ/cwO1aosFj4Q6dhUIRbmuHw/edit?utm_content=DAHEp45A5bQ&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton ">Consumer Persona of LV Buyer</a>
+<a class="card" target="_blank" href="https://www.canva.com/design/DAHElAYpSzc/qRHWj6B1KwwqgRHCdhR_kQ/edit?utm_content=DAHElAYpSzc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton ">New Income Tax Act - Government Campaign</a>
+<a class="card" target="_blank" href="https://www.canva.com/design/DAHDher596E/PJ0OwMpnUQto4pIBhnMUEg/edit?utm_content=DAHDher596E&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Hardik Pandya: Crisis Communication Strategy</a>
+<a class="card" target="_blank" href="https://www.canva.com/design/DAG_EPiwaXw/5x-det6DCsOVFo3IIMtVlw/edit?utm_content=DAG_EPiwaXw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Amazon Great Indian Sale - Marketing Plan</a>
+<a class="card" target="_blank" href="https://www.canva.com/design/DAHEp-sWnY4/oEsdo7KmGRL9B7Rz9A6fzg/edit?utm_content=DAHEp-sWnY4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Lenskart: Storyboard</a>
+<a class="card" target="_blank" href="https://www.canva.com/design/DAHDiN5YHtA/_1VX2ekLyV0CKnflFRjEVg/edit?utm_content=DAHDiN5YHtA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Prozein: Brand Launch</a>
+<a class="card" target="_blank" href="https://www.canva.com/design/DAHEp8JgEcI/Keukl0aj0zZZKfbdAo2Wmg/edit?utm_content=DAHEp8JgEcI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton ">Nike — "Just Do It" Campaign Deconstruction</a>
+<a class="card" target="_blank" href="https://www.canva.com/design/DAG_98SgwSg/q8epe52w4UPbPkyBjwM3Mw/view?utm_content=DAG_98SgwSg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdcc64aa792">Boat - Creative Brief</a>
+<a class="card" target="_blank" href="https://www.canva.com/design/DAHEp_Fj7Hg/kHdKIjSCdg2i3Ok_nQ_Cyg/edit?utm_content=DAHEp_Fj7Hg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Magazine</a>
+
+</div>
+</section>
+
+<!-- CREATIVES -->
+<section id="creatives" class="px-6 md:px-16 py-16">
+<h2 class="text-3xl font-semibold mb-10">Creatives</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<a target="_blank" href="https://www.canva.com/design/DAHEqAHJpdE/AIJdAnxtxCxLj4yt5fMu9g/edit?utm_content=DAHEqAHJpdE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton " class="card">Creative 01</a>
+<a target="_blank" href="https://www.canva.com/design/DAHECNY7fYY/o8mKVL6WoWfkSZ5evMAneQ/edit?utm_content=DAHEjrOWcIw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card">Creative 02</a>
+<a target="_blank" href="https://www.canva.com/design/DAHEjrOWcIw/XjPj7jf6cbbR0yXzyfA6ww/edit?utm_content=DAHEjrOWcIw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card">Creative 03</a>
+<a target="_blank" href="https://www.canva.com/design/DAHEqANK1_w/l-Qtw455Tx17IlTawwJsfw/edit?utm_content=DAHEqANK1_w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton " class="card">Creative 04</a>
+<a target="_blank" href="https://www.canva.com/design/DAHEp_pYIQc/KOGu7eh71N35ivq3oLw6kw/edit?utm_content=DAHEp_pYIQc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton " class="card">Creative 05</a>
+<a target="_blank" href="https://www.canva.com/design/DAHD7pVNG5Q/HLmWZL6ET6pfI5u6H1LJTA/edit?utm_content=DAHD7pVNG5Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card">Creative 06</a>
+<a target="_blank" href="https://www.canva.com/design/DAHERkRjw20/vCRR8RWq5ItEQWnYYnqNRw/edit?utm_content=DAHERkRjw20&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card">Creative 07</a>
+<a target="_blank" href="https://www.canva.com/design/DAHECNY7fYY/o8mKVL6WoWfkSZ5evMAneQ/edit?utm_content=DAHECNY7fYY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="card">Creative 08</a>
+<a target="_blank" href="https://www.linkedin.com/posts/aditya-kumar-rai-0a4307225_laysad-iimcdelhi-advertisement-activity-7409401520871534593-Epmj?utm_source=share&utm_medium=member_android&rcm=ACoAADh247wBQUxL0cxBAMcEuYjfbibUAddAFS4" class="card">Creative 09</a>
+<a target="_blank" href="https://www.linkedin.com/posts/aditya-kumar-rai-0a4307225_at-indian-institute-of-mass-communication-activity-7428239324250476544-qCM3?utm_source=share&utm_medium=member_android&rcm=ACoAADh247wBQUxL0cxBAMcEuYjfbibUAddAFS4 " class="card">Creative 10</a>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-6 md:px-16 py-16">
+<h2 class="text-3xl font-semibold mb-10">Contact</h2>
+
+<div class="space-y-4">
+
+<a href="mailto:addy.rai2002@gmail.com" class="flex items-center gap-3">
+<i data-lucide="mail"></i>
+<span>Email</span>
+</a>
+
+<a href="https://www.linkedin.com/in/aditya-kumar-rai-0a4307225" target="_blank" class="flex items-center gap-3">
+<i data-lucide="linkedin"></i>
+<span>LinkedIn</span>
+</a>
+
+<a href="https://www.instagram.com/addy_kun_rai04" target="_blank" class="flex items-center gap-3">
+<i data-lucide="instagram"></i>
+<span>Instagram</span>
+</a>
+
+</div>
+</section>
+
+<footer class="px-6 md:px-16 py-10 text-center text-white/60">
+© 2026 Aditya Kumar Rai — Portfolio <a href="https://github.com/jobin-512/">by jobin-512</a>
+</footer>
+
+<script>
+lucide.createIcons();
+
+function toggle(el){
+const p = el.querySelector("p");
+p.classList.toggle("hidden");
+}
+</script>
 
 </body>
-
 </html>
